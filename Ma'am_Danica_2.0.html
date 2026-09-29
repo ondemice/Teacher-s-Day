@@ -1,0 +1,2141 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Ma'am Danica 💐</title>
+
+<style>
+
+/* =========================
+   RESET
+========================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* =========================
+   BODY
+========================= */
+
+body {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-family:
+        "Trebuchet MS",
+        sans-serif;
+
+    background:
+        linear-gradient(
+            135deg,
+            #fff0f7,
+            #eef8ff,
+            #fff9df
+        );
+
+    overflow: hidden;
+
+    transition:
+        opacity .4s ease,
+        transform .4s ease;
+}
+
+
+/* =========================
+   SAKURA BACKGROUND
+========================= */
+
+.sakura-container {
+
+    position: fixed;
+
+    inset: 0;
+
+    overflow: hidden;
+
+    pointer-events: none;
+
+    z-index: 0;
+}
+
+
+.petal {
+
+    position: absolute;
+
+    top: -30px;
+
+    width: 12px;
+
+    height: 8px;
+
+    background:
+        rgba(
+            255,
+            176,
+            201,
+            .55
+        );
+
+    border-radius:
+        100% 0 100% 0;
+
+    box-shadow:
+        0 0 5px
+        rgba(
+            255,
+            170,
+            200,
+            .18
+        );
+
+    animation:
+        petalFall
+        linear
+        infinite,
+
+        petalSway
+        ease-in-out
+        infinite;
+
+    pointer-events: none;
+}
+
+
+@keyframes petalFall {
+
+    from {
+
+        transform:
+            translateY(-40px)
+            rotate(0deg);
+
+    }
+
+    to {
+
+        transform:
+            translateY(110vh)
+            rotate(360deg);
+
+    }
+
+}
+
+
+@keyframes petalSway {
+
+    0%,
+    100% {
+
+        margin-left: -10px;
+
+    }
+
+    50% {
+
+        margin-left: 35px;
+
+    }
+
+}
+
+
+/* =========================
+   MAIN CARD
+========================= */
+
+.card {
+
+    width:
+        min(
+            90vw,
+            90vh,
+            400px
+        );
+
+    aspect-ratio: 1 / 1;
+
+    background:
+        rgba(
+            255,
+            255,
+            255,
+            .93
+        );
+
+    border-radius: 28px;
+
+    padding: 7%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    box-shadow:
+        0 15px 40px
+        rgba(
+            100,
+            70,
+            100,
+            .18
+        );
+
+    position: relative;
+
+    z-index: 2;
+
+    animation:
+        cardAppear
+        .8s
+        ease;
+}
+
+
+@keyframes cardAppear {
+
+    from {
+
+        opacity: 0;
+
+        transform:
+            scale(.92);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform:
+            scale(1);
+
+    }
+
+}
+
+
+/* =========================
+   FLOWER
+========================= */
+
+.flower {
+
+    font-size:
+        clamp(
+            35px,
+            11vw,
+            55px
+        );
+
+    animation:
+        flowerFloat
+        2.5s
+        ease-in-out
+        infinite;
+
+    cursor: pointer;
+
+    position: relative;
+
+    z-index: 30;
+
+    user-select: none;
+
+    touch-action: manipulation;
+
+    transition:
+        transform .2s ease;
+}
+
+
+.flower:active {
+
+    transform:
+        scale(.85);
+
+}
+
+
+@keyframes flowerFloat {
+
+    0%,
+    100% {
+
+        transform:
+            translateY(0);
+
+    }
+
+    50% {
+
+        transform:
+            translateY(-7px);
+
+    }
+
+}
+
+
+/* =========================
+   TITLE
+========================= */
+
+h1 {
+
+    margin-top: 5px;
+
+    font-size:
+        clamp(
+            22px,
+            7vw,
+            32px
+        );
+
+    color:
+        #d86f95;
+}
+
+
+.subtitle {
+
+    margin-top: 4px;
+
+    font-size:
+        clamp(
+            10px,
+            3.2vw,
+            15px
+        );
+
+    color:
+        #8d748e;
+}
+
+
+/* =========================
+   DIVIDER
+========================= */
+
+.line {
+
+    width: 60px;
+
+    height: 3px;
+
+    margin: 10px auto;
+
+    border-radius: 10px;
+
+    background:
+        #efa6bd;
+}
+
+
+/* =========================
+   INTRO
+========================= */
+
+.message {
+
+    max-width: 330px;
+
+    font-size:
+        clamp(
+            11px,
+            3.5vw,
+            15px
+        );
+
+    line-height: 1.45;
+
+    color:
+        #66556a;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+button {
+
+    margin-top: 12px;
+
+    padding:
+        9px 17px;
+
+    border: none;
+
+    border-radius: 25px;
+
+    background:
+        #e88bab;
+
+    color: white;
+
+    font-size:
+        clamp(
+            11px,
+            3.5vw,
+            14px
+        );
+
+    font-weight: bold;
+
+    box-shadow:
+        0 6px 14px
+        rgba(
+            217,
+            112,
+            150,
+            .25
+        );
+
+    cursor: pointer;
+
+    touch-action:
+        manipulation;
+
+    transition:
+        transform .15s ease;
+}
+
+
+button:active {
+
+    transform:
+        scale(.94);
+
+}
+
+
+/* =========================
+   REAL MESSAGE
+========================= */
+
+#surprise {
+
+    display: none;
+
+    width: 100%;
+
+    max-height: 65%;
+
+    margin-top: 10px;
+
+    padding: 14px;
+
+    background:
+        #fff4f9;
+
+    border-radius: 17px;
+
+    font-size:
+        clamp(
+            10px,
+            3vw,
+            13px
+        );
+
+    line-height: 1.5;
+
+    text-align: left;
+
+    overflow-y: auto;
+
+    animation:
+        messageOpen
+        .45s
+        ease;
+}
+
+
+@keyframes messageOpen {
+
+    from {
+
+        opacity: 0;
+
+        transform:
+            translateY(10px)
+            scale(.97);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform:
+            translateY(0)
+            scale(1);
+
+    }
+
+}
+
+
+#surprise.closing {
+
+    animation:
+        messageClose
+        .3s
+        ease
+        forwards;
+}
+
+
+@keyframes messageClose {
+
+    from {
+
+        opacity: 1;
+
+        transform:
+            translateY(0)
+            scale(1);
+
+    }
+
+    to {
+
+        opacity: 0;
+
+        transform:
+            translateY(10px)
+            scale(.97);
+
+    }
+
+}
+
+
+#surprise::-webkit-scrollbar {
+
+    width: 4px;
+
+}
+
+
+#surprise::-webkit-scrollbar-thumb {
+
+    background:
+        #e9a0b9;
+
+    border-radius:
+        10px;
+
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+
+    margin-top: 9px;
+
+    font-size: 11px;
+
+    color:
+        #a08ba2;
+
+    cursor: pointer;
+
+    position: relative;
+
+    z-index: 12;
+
+    touch-action:
+        manipulation;
+
+    transition:
+        transform .2s ease;
+}
+
+
+.footer:active {
+
+    transform:
+        scale(.95);
+
+}
+
+
+/* =========================
+   EASTER EGG
+========================= */
+
+#easterEgg {
+
+    display: none;
+
+    position: absolute;
+
+    left: 50%;
+
+    bottom: 7%;
+
+    transform:
+        translateX(-50%);
+
+    width: 82%;
+
+    padding: 13px;
+
+    background:
+        rgba(
+            255,
+            255,
+            255,
+            .97
+        );
+
+    border:
+        1px solid
+        #f3c6d5;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 8px 25px
+        rgba(
+            100,
+            70,
+            100,
+            .15
+        );
+
+    color:
+        #6c596d;
+
+    font-size: 12px;
+
+    line-height: 1.45;
+
+    z-index: 20;
+
+    touch-action:
+        manipulation;
+
+    animation:
+        eggOpen
+        .5s
+        ease;
+}
+
+
+@keyframes eggOpen {
+
+    from {
+
+        opacity: 0;
+
+        transform:
+            translate(
+                -50%,
+                15px
+            )
+            scale(.9);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform:
+            translate(
+                -50%,
+                0
+            )
+            scale(1);
+
+    }
+
+}
+
+
+#easterEgg.closing {
+
+    animation:
+        eggClose
+        .3s
+        ease
+        forwards;
+}
+
+
+@keyframes eggClose {
+
+    from {
+
+        opacity: 1;
+
+        transform:
+            translate(
+                -50%,
+                0
+            )
+            scale(1);
+
+    }
+
+    to {
+
+        opacity: 0;
+
+        transform:
+            translate(
+                -50%,
+                12px
+            )
+            scale(.94);
+
+    }
+
+}
+
+
+.egg-title {
+
+    color:
+        #d86f95;
+
+    font-weight:
+        bold;
+
+    font-size:
+        14px;
+}
+
+
+/* ==================================================
+   CHEMISTRY QUIZ
+   NEW ADDITION
+================================================== */
+
+#chemistryQuiz {
+
+    display: none;
+
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 100;
+
+    background:
+        linear-gradient(
+            135deg,
+            #fff0f7,
+            #eef8ff,
+            #fff9df
+        );
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 20px;
+
+    animation:
+        quizOpen
+        .45s
+        ease;
+}
+
+
+@keyframes quizOpen {
+
+    from {
+
+        opacity: 0;
+
+    }
+
+    to {
+
+        opacity: 1;
+
+    }
+
+}
+
+
+.quiz-card {
+
+    width:
+        min(
+            92vw,
+            430px
+        );
+
+    max-height: 90vh;
+
+    overflow-y: auto;
+
+    background:
+        rgba(
+            255,
+            255,
+            255,
+            .96
+        );
+
+    border-radius: 28px;
+
+    padding: 25px 20px;
+
+    text-align: center;
+
+    box-shadow:
+        0 15px 45px
+        rgba(
+            100,
+            70,
+            100,
+            .2
+        );
+
+}
+
+
+.quiz-number {
+
+    font-size: 13px;
+
+    color:
+        #d86f95;
+
+    font-weight: bold;
+
+    margin-bottom: 8px;
+
+}
+
+
+.quiz-title {
+
+    font-size: 24px;
+
+    color:
+        #d86f95;
+
+    margin-bottom: 8px;
+
+}
+
+
+.quiz-question {
+
+    font-size: 16px;
+
+    line-height: 1.45;
+
+    color:
+        #66556a;
+
+    margin:
+        15px 0;
+}
+
+
+/* =========================
+   ANSWERS
+========================= */
+
+.quiz-options {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+
+}
+
+
+.quiz-option {
+
+    width: 100%;
+
+    margin: 0;
+
+    padding: 12px 15px;
+
+    border-radius: 17px;
+
+    background:
+        #fff4f9;
+
+    color:
+        #66556a;
+
+    border:
+        2px solid
+        transparent;
+
+    box-shadow:
+        none;
+
+    font-size: 14px;
+
+    transition:
+        all .25s ease;
+
+}
+
+
+.quiz-option:hover {
+
+    border-color:
+        #efa6bd;
+
+}
+
+
+/* =========================
+   Q5 SPECIAL OPTIONS
+========================= */
+
+.quiz-option.shan {
+
+    background:
+        #ffe4ef;
+
+    border-color:
+        #efa6bd;
+
+    font-weight: bold;
+
+    transform:
+        scale(1.08);
+
+}
+
+
+.quiz-option.removing {
+
+    opacity: 0;
+
+    transform:
+        scale(.4);
+
+    pointer-events:
+        none;
+
+}
+
+
+.quiz-option.eliminated {
+
+    display: none;
+
+}
+
+
+.quiz-result {
+
+    display: none;
+
+    color:
+        #66556a;
+
+    line-height: 1.5;
+
+    font-size: 15px;
+
+}
+
+
+.quiz-result h2 {
+
+    color:
+        #d86f95;
+
+    margin-bottom: 12px;
+
+}
+
+
+.quiz-back {
+
+    margin-top: 18px;
+
+}
+
+
+/* =========================
+   PAGE EXIT
+========================= */
+
+body.leaving {
+
+    opacity: 0;
+
+    transform:
+        scale(.96);
+
+    pointer-events:
+        none;
+
+}
+
+
+/* =========================
+   REDUCE MOTION
+========================= */
+
+@media (
+    prefers-reduced-motion: reduce
+) {
+
+    * {
+
+        animation-duration:
+            .01ms !important;
+
+        animation-iteration-count:
+            1 !important;
+
+        transition-duration:
+            .01ms !important;
+
+    }
+
+}
+
+</style>
+</head>
+
+
+<body>
+
+<!-- =========================
+     SAKURA
+========================= -->
+
+<div
+    class="sakura-container"
+    id="sakura">
+</div>
+
+
+<!-- =========================
+     CARD
+========================= -->
+
+<div class="card">
+
+    <div
+        class="flower"
+        id="flower">
+
+        💐
+
+    </div>
+
+
+    <h1>
+        Happy Teacher's Day!
+    </h1>
+
+
+    <p class="subtitle">
+        For Ma’am Danica 🤍
+    </p>
+
+
+    <div class="line"></div>
+
+
+    <p class="message">
+
+        A little message for someone
+        who has made Grade 11 and Grade 12
+        a little more meaningful. 🌷
+
+    </p>
+
+
+    <!-- =====================
+         MESSAGE BUTTON
+    ====================== -->
+
+    <button
+        id="messageButton"
+        type="button">
+
+        💌 Open my message
+
+    </button>
+
+
+    <!-- =====================
+         REAL MESSAGE
+    ====================== -->
+
+    <div id="surprise">
+
+        <b>
+            Dear Ma’am Danica,
+        </b>
+
+
+        <br><br>
+
+
+        Thank you for your patience with me,
+        even if minsan sobrang nakakainis na ako
+        kasi ang dami ko talagang tanong.
+        HAHAHAHA.
+
+
+        <br><br>
+
+
+        Tbh, you’ve been my favorite teacher
+        since Grade 11. Nalungkot pa nga ako nung
+        prinank nila ako na si Ma’am Lea daw yung
+        magiging adviser namin. 😭 HAHAHAHA.
+
+
+        <br><br>
+
+
+        You are truly one of a kind. Words can’t
+        fully describe how grateful I am to have
+        you as my teacher and adviser.
+
+
+        <br><br>
+
+
+        Thank you for always being patient,
+        understanding, and supportive.
+
+
+        <br><br>
+
+
+        Hindi ko na po papahabain, Ma’am Dan,
+        baka po maiyak ka. Alam pa naman po namin
+        na balat-sibuyas ka pagdating sa mga
+        ganitong message. HAHAHAHA.
+
+
+        <br><br>
+
+
+        <i>
+
+            (’Di na talaga kasya yung mahabang text
+            sa ratio ng HTML. 😭)
+
+        </i>
+
+
+        <br><br>
+
+
+        <b>
+            Happy Teacher’s Day, Ma’am Danica! 🤍
+        </b>
+
+
+        <br><br>
+
+
+        <b>
+            — Shan
+        </b>
+
+    </div>
+
+
+    <!-- =====================
+         SECRET TRIGGER
+    ====================== -->
+
+    <p
+        class="footer"
+        id="footer">
+
+        Loves slow mornings ☁️
+
+    </p>
+
+
+    <!-- =====================
+         SECRET MESSAGE
+    ====================== -->
+
+    <div id="easterEgg">
+
+        <div class="egg-title">
+
+            ☁️ You found the little secret!
+
+        </div>
+
+
+        <br>
+
+
+        I hope you get plenty of slow mornings,
+        peaceful days, good coffee,
+        and moments where you don't have
+        to worry about your students asking
+        500 questions. HAHAHAHA. 😭
+
+
+        <br><br>
+
+
+        <b>
+
+            You deserve a little peace too, Ma’am. 🌷
+
+        </b>
+
+    </div>
+
+</div>
+
+
+<!-- ==================================================
+     CHEMISTRY QUIZ
+     NEW ADDITION ONLY
+================================================== -->
+
+<div id="chemistryQuiz">
+
+    <div class="quiz-card">
+
+        <div
+            class="quiz-number"
+            id="quizNumber">
+
+            Chemistry 1 / 5
+
+        </div>
+
+
+        <div class="quiz-title">
+            🧪 Mini Chemistry Quiz
+        </div>
+
+
+        <div
+            class="quiz-question"
+            id="quizQuestion">
+        </div>
+
+
+        <div
+            class="quiz-options"
+            id="quizOptions">
+        </div>
+
+
+        <div
+            class="quiz-result"
+            id="quizResult">
+
+            <h2>
+                🎉 Quiz Complete!
+            </h2>
+
+            <p>
+                Congratulations, Ma’am! You survived
+                the chemistry questions...
+                but apparently there was only
+                one scientifically correct answer
+                to the last question. 😭
+            </p>
+
+            <p style="margin-top:10px;">
+                <b>Shan. Obviously. HAHAHAHA.</b>
+            </p>
+
+            <button
+                class="quiz-back"
+                id="quizBack">
+
+                💐 Back to Teacher's Day Card
+
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<script>
+
+/* ==================================================
+   ELEMENTS
+================================================== */
+
+const messageButton =
+    document.getElementById(
+        "messageButton"
+    );
+
+const surprise =
+    document.getElementById(
+        "surprise"
+    );
+
+const footer =
+    document.getElementById(
+        "footer"
+    );
+
+const easterEgg =
+    document.getElementById(
+        "easterEgg"
+    );
+
+
+/* ==================================================
+   MESSAGE
+================================================== */
+
+function openMessage() {
+
+    surprise.classList.remove(
+        "closing"
+    );
+
+    surprise.style.display =
+        "block";
+
+    messageButton.innerHTML =
+        "💌 Close my message";
+
+}
+
+
+function closeMessage() {
+
+    surprise.classList.add(
+        "closing"
+    );
+
+    setTimeout(
+        function() {
+
+            surprise.style.display =
+                "none";
+
+            surprise.classList.remove(
+                "closing"
+            );
+
+            messageButton.innerHTML =
+                "💌 Open my message";
+
+        },
+        300
+    );
+
+}
+
+
+messageButton.addEventListener(
+    "click",
+    function() {
+
+        if (
+            surprise.style.display ===
+            "block"
+        ) {
+
+            closeMessage();
+
+        } else {
+
+            openMessage();
+
+        }
+
+    }
+);
+
+
+/* ==================================================
+   SECRET MESSAGE
+================================================== */
+
+function openEgg() {
+
+    easterEgg.classList.remove(
+        "closing"
+    );
+
+    easterEgg.style.display =
+        "block";
+
+}
+
+
+function closeEgg() {
+
+    easterEgg.classList.add(
+        "closing"
+    );
+
+    setTimeout(
+        function() {
+
+            easterEgg.style.display =
+                "none";
+
+            easterEgg.classList.remove(
+                "closing"
+            );
+
+        },
+        300
+    );
+
+}
+
+
+footer.addEventListener(
+    "click",
+    function(event) {
+
+        event.stopPropagation();
+
+        if (
+            easterEgg.style.display ===
+            "block"
+        ) {
+
+            closeEgg();
+
+        } else {
+
+            openEgg();
+
+        }
+
+    }
+);
+
+
+/* ==================================================
+   TOUCH OUTSIDE SECRET MESSAGE
+================================================== */
+
+document.addEventListener(
+    "click",
+    function(event) {
+
+        if (
+            easterEgg.style.display !==
+            "block"
+        ) {
+
+            return;
+
+        }
+
+
+        const insideEgg =
+            easterEgg.contains(
+                event.target
+            );
+
+        const onFooter =
+            footer.contains(
+                event.target
+            );
+
+
+        if (
+            !insideEgg &&
+            !onFooter
+        ) {
+
+            closeEgg();
+
+        }
+
+    }
+);
+
+
+/* ==================================================
+   ANDROID / BROWSER BACK BUTTON
+================================================== */
+
+history.pushState(
+    {
+        teacherCard: true
+    },
+    "",
+    window.location.href
+);
+
+
+window.addEventListener(
+    "popstate",
+    function() {
+
+
+        if (
+            easterEgg.style.display ===
+            "block"
+        ) {
+
+            closeEgg();
+
+
+            history.pushState(
+                {
+                    teacherCard: true
+                },
+                "",
+                window.location.href
+            );
+
+
+            return;
+
+        }
+
+
+        if (
+            surprise.style.display ===
+            "block"
+        ) {
+
+            closeMessage();
+
+
+            history.pushState(
+                {
+                    teacherCard: true
+                },
+                "",
+                window.location.href
+            );
+
+
+            return;
+
+        }
+
+
+        document.body.classList.add(
+            "leaving"
+        );
+
+    }
+);
+
+
+/* ==================================================
+   SAKURA PETALS
+================================================== */
+
+const sakura =
+    document.getElementById(
+        "sakura"
+    );
+
+
+for (
+    let i = 0;
+    i < 28;
+    i++
+) {
+
+    const petal =
+        document.createElement(
+            "div"
+        );
+
+
+    petal.className =
+        "petal";
+
+
+    petal.style.left =
+        Math.random() * 100 + "%";
+
+
+    petal.style.animationDuration =
+        (
+            7 +
+            Math.random() * 8
+        ) + "s";
+
+
+    petal.style.animationDelay =
+        (
+            Math.random() * 10
+        ) + "s";
+
+
+    petal.style.opacity =
+        .25 +
+        Math.random() * .4;
+
+
+    const size =
+        .6 +
+        Math.random() * .8;
+
+
+    petal.style.width =
+        (
+            12 * size
+        ) + "px";
+
+
+    petal.style.height =
+        (
+            8 * size
+        ) + "px";
+
+
+    sakura.appendChild(
+        petal
+    );
+
+}
+
+
+/* ==================================================
+   NORMAL PAGE EXIT
+================================================== */
+
+window.addEventListener(
+    "pagehide",
+    function() {
+
+        document.body.classList.add(
+            "leaving"
+        );
+
+    }
+);
+
+
+/* ==================================================
+   ==================================================
+   CHEMISTRY QUIZ
+   NEW CODE
+   ==================================================
+   ================================================== */
+
+const flower =
+    document.getElementById(
+        "flower"
+    );
+
+const chemistryQuiz =
+    document.getElementById(
+        "chemistryQuiz"
+    );
+
+const quizNumber =
+    document.getElementById(
+        "quizNumber"
+    );
+
+const quizQuestion =
+    document.getElementById(
+        "quizQuestion"
+    );
+
+const quizOptions =
+    document.getElementById(
+        "quizOptions"
+    );
+
+const quizResult =
+    document.getElementById(
+        "quizResult"
+    );
+
+const quizBack =
+    document.getElementById(
+        "quizBack"
+    );
+
+
+/* =========================
+   QUESTIONS 1–4
+========================= */
+
+const chemistryQuestions = [
+
+    {
+        question:
+            "What is the chemical symbol for oxygen?",
+
+        options: [
+            "A. O",
+            "B. Ox",
+            "C. C",
+            "D. H"
+        ],
+
+        answer: 0
+    },
+
+
+    {
+        question:
+            "What is the pH of a neutral substance at room temperature?",
+
+        options: [
+            "A. 0",
+            "B. 5",
+            "C. 7",
+            "D. 14"
+        ],
+
+        answer: 2
+    },
+
+
+    {
+        question:
+            "Which particle has a negative electrical charge?",
+
+        options: [
+            "A. Proton",
+            "B. Neutron",
+            "C. Nucleus",
+            "D. Electron"
+        ],
+
+        answer: 3
+    },
+
+
+    {
+        question:
+            "What type of reaction occurs when two or more substances combine to form one product?",
+
+        options: [
+            "A. Decomposition",
+            "B. Synthesis",
+            "C. Single replacement",
+            "D. Combustion"
+        ],
+
+        answer: 1
+    }
+
+];
+
+
+let currentQuestion = 0;
+
+
+/* ==================================================
+   OPEN QUIZ WHEN FLOWER IS PRESSED
+================================================== */
+
+flower.addEventListener(
+    "click",
+    function(event) {
+
+        event.stopPropagation();
+
+        openChemistryQuiz();
+
+    }
+);
+
+
+function openChemistryQuiz() {
+
+    currentQuestion = 0;
+
+    chemistryQuiz.style.display =
+        "flex";
+
+    quizResult.style.display =
+        "none";
+
+    quizOptions.style.display =
+        "flex";
+
+    renderChemistryQuestion();
+
+}
+
+
+/* ==================================================
+   RENDER QUESTIONS
+================================================== */
+
+function renderChemistryQuestion() {
+
+    quizNumber.textContent =
+        "Chemistry " +
+        (currentQuestion + 1) +
+        " / 5";
+
+
+    quizOptions.innerHTML =
+        "";
+
+
+    /* -----------------------------
+       QUESTIONS 1–4
+    ----------------------------- */
+
+    if (
+        currentQuestion <
+        chemistryQuestions.length
+    ) {
+
+        const q =
+            chemistryQuestions[
+                currentQuestion
+            ];
+
+
+        quizQuestion.textContent =
+            q.question;
+
+
+        q.options.forEach(
+            function(option, index) {
+
+                const button =
+                    document.createElement(
+                        "button"
+                    );
+
+
+                button.className =
+                    "quiz-option";
+
+
+                button.textContent =
+                    option;
+
+
+                button.addEventListener(
+                    "click",
+                    function() {
+
+                        if (
+                            index ===
+                            q.answer
+                        ) {
+
+                            currentQuestion++;
+
+                            if (
+                                currentQuestion <
+                                5
+                            ) {
+
+                                renderChemistryQuestion();
+
+                            } else {
+
+                                renderFinalQuestion();
+
+                            }
+
+                        } else {
+
+                            button.style.transform =
+                                "scale(.96)";
+
+                            setTimeout(
+                                function() {
+
+                                    button.style.transform =
+                                        "";
+
+                                },
+                                150
+                            );
+
+                        }
+
+                    }
+                );
+
+
+                quizOptions.appendChild(
+                    button
+                );
+
+            }
+        );
+
+        return;
+
+    }
+
+
+    renderFinalQuestion();
+
+}
+
+
+/* ==================================================
+   QUESTION 5
+================================================== */
+
+function renderFinalQuestion() {
+
+    quizNumber.textContent =
+        "Chemistry 5 / 5";
+
+
+    quizQuestion.textContent =
+        "Who is your most handsome student?";
+
+
+    quizOptions.innerHTML =
+        "";
+
+
+    const choices = [
+
+        {
+            name:
+                "A. Shan",
+
+            correct:
+                true
+        },
+
+        {
+            name:
+                "B. Andy",
+
+            correct:
+                false
+        },
+
+        {
+            name:
+                "C. Erjen",
+
+            correct:
+                false
+        },
+
+        {
+            name:
+                "D. None of the above",
+
+            correct:
+                false
+        }
+
+    ];
+
+
+    choices.forEach(
+        function(choice, index) {
+
+            const button =
+                document.createElement(
+                    "button"
+                );
+
+
+            button.className =
+                "quiz-option";
+
+
+            button.textContent =
+                choice.name;
+
+
+            if (
+                choice.correct
+            ) {
+
+                button.classList.add(
+                    "shan"
+                );
+
+                button.dataset.shan =
+                    "true";
+
+            }
+
+
+            button.addEventListener(
+                "click",
+                function() {
+
+                    if (
+                        choice.correct
+                    ) {
+
+                        showQuizResult();
+
+                    } else {
+
+                        eliminateChoice(
+                            button
+                        );
+
+                    }
+
+                }
+            );
+
+
+            quizOptions.appendChild(
+                button
+            );
+
+        }
+    );
+
+}
+
+
+/* ==================================================
+   REMOVE WRONG ANSWER
+================================================== */
+
+function eliminateChoice(
+    button
+) {
+
+    button.classList.add(
+        "removing"
+    );
+
+
+    setTimeout(
+        function() {
+
+            button.classList.add(
+                "eliminated"
+            );
+
+
+            const shan =
+                quizOptions.querySelector(
+                    '[data-shan="true"]'
+                );
+
+
+            if (shan) {
+
+                const remaining =
+                    quizOptions.querySelectorAll(
+                        ".quiz-option:not(.eliminated)"
+                    );
+
+
+                const newSize =
+                    Math.min(
+                        1.08 +
+                        (
+                            3 -
+                            remaining.length
+                        ) * .07,
+
+                        1.32
+                    );
+
+
+                shan.style.transform =
+                    "scale(" +
+                    newSize +
+                    ")";
+
+            }
+
+        },
+        250
+    );
+
+}
+
+
+/* ==================================================
+   FINAL RESULT
+================================================== */
+
+function showQuizResult() {
+
+    quizOptions.style.display =
+        "none";
+
+    quizQuestion.style.display =
+        "none";
+
+    quizResult.style.display =
+        "block";
+
+}
+
+
+/* ==================================================
+   BACK TO CARD
+================================================== */
+
+quizBack.addEventListener(
+    "click",
+    function() {
+
+        chemistryQuiz.style.display =
+            "none";
+
+        quizQuestion.style.display =
+            "block";
+
+        quizResult.style.display =
+            "none";
+
+        quizOptions.style.display =
+            "flex";
+
+    }
+);
+
+</script>
+
+</body>
+</html>
